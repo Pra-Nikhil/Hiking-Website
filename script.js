@@ -246,7 +246,7 @@ tl.from('#pra3 p', {
 
 window.addEventListener('scroll', (e) => {
     e.stopPropagation()
-    console.log(window.scrollY)
+    
     const scrollLength = window.scrollY
     if (scrollLength >= 0 && scrollLength <= 500) {
         gsap.to('.nav-animation', {
@@ -704,7 +704,7 @@ third.addEventListener('click', (e) => {
 
 leftSideNav.addEventListener('mouseenter', (e) => {
     e.stopPropagation()
-    console.log('bb')
+    
     gsap.from('.border-line', {
         boxShadow: '0px 1px 12px 0px rgb(126, 126, 126)',
         yoyo: true,
