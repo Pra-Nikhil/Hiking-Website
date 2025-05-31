@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog CSS Style</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <div class="blog-div">
+        <nav class="nav-icons">
+                                        <a href="index.html">Equipment</a>
+                                        <a href="aboutme.html">About us</a>
+                                        <a href="blog.html">Blog</a>
+                                    </nav>
+        <div class="blog-contant">
+            <pre><code>
+            <p>Don't you think this is too much JavaScript and GSAP for a small navbar?</p>
+
+            window.addEventListener('scroll', (e) => {
+            e.stopPropagation()
+            console.log(window.scrollY)
+            const scrollLength = window.scrollY
+            if (scrollLength >= 0 && scrollLength <= 500) { gsap.to('.nav-animation', { y: `0`, delay: 0.8,
+                ease: "sine.out" , }) } else if (scrollLength>= 500 && scrollLength <= 1100) { gsap.to('.nav-animation',
+                    { y: `50`, delay: 0.8, ease: "sine.out" , }) } else if (scrollLength> 1100 && scrollLength <= 1640)
+                        { gsap.to('.nav-animation', { y: `104`, delay: 0.8, ease: "sine.out" , }) } else if
+                        (scrollLength> 1640) {
+                        gsap.to('.nav-animation', {
+                        y: `158`,
+                        delay: 0.8,
+                        ease: "sine.out",
+                        })
+                        }
+                        })
+
+                        leftSideNav.addEventListener('mouseenter', (e) => {
+                        e.stopPropagation()
+                        home.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+                        first.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+
+                        secound.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+
+
+                        third.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+
+                        home.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+
+                        first.addEventListener('mouseout', (e) => {
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        secound.addEventListener('mouseout', (e) => {
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+                        third.addEventListener('mouseout', (e) => {
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+                        })
+
+                        // home mouse animation
+
+                        home.addEventListener('click', (e) => {
+                        e.stopPropagation()
+
+                        home.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        first.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+
+                        secound.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+
+                        third.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+
+                        // home mouseout
+
+                        home.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+
+                        first.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        secound.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+                        third.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2,
+                        ease: "sine.out",
+                        })
+                        })
+                        })
+
+                        // first mouse animation
+
+                        first.addEventListener('click', (e) => {
+                        e.stopPropagation()
+
+                        home.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        })
+                        })
+                        first.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+
+                        })
+
+                        secound.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+
+
+                        third.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2
+                        })
+                        })
+
+                        // first scound
+
+                        home.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+
+                        first.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        secound.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        third.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2
+                        })
+                        })
+                        })
+
+                        // secound mouse click animation
+
+                        secound.addEventListener('click', (e) => {
+
+                        home.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        first.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+
+                        })
+
+                        secound.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+
+                        third.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2
+                        })
+                        })
+
+                        // mouseout secound
+
+                        home.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        first.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        secound.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+
+                        })
+                        })
+                        third.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2
+                        })
+                        })
+                        })
+
+                        // third mouse click animation
+
+                        third.addEventListener('click', (e) => {
+
+                        home.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 0
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        first.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 50
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+
+                        secound.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 104
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+
+                        third.addEventListener('mousemove', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2
+                        })
+                        })
+
+                        // mouseout third
+
+                        home.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        first.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+                        })
+                        })
+                        secound.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}`,
+                        delay: 0.2
+
+                        })
+                        })
+                        third.addEventListener('mouseout', (e) => {
+                        e.stopPropagation()
+                        let animationMove = 158
+
+                        gsap.to('.nav-animation', {
+                        y: `${animationMove}px`,
+                        delay: 0.2
+                        })
+                        })
+                        })
+
+                        leftSideNav.addEventListener('mouseenter', (e) => {
+                        e.stopPropagation()
+                        console.log('bb')
+                        gsap.from('.border-line', {
+                        boxShadow: '0px 1px 12px 0px rgb(126, 126, 126)',
+                        yoyo: true,
+                        repeat: 4,
+                        delay: 0.4
+                        })
+                        })
+                        </code></pre>
+        </div>
+    </div>
+</body>
+
+</html>
