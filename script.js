@@ -712,4 +712,3 @@ leftSideNav.addEventListener('mouseenter', (e) => {
         delay: 0.4
     })
 })
-
