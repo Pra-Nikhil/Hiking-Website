@@ -179,7 +179,7 @@ nav a {
     height: 240px;
     font-size: 24px;
     font-weight: 500;
-    color: rgba(70, 47, 47, 0.680);
+    color: rgba(80, 49, 49, 0.808);
 }
 
 /*
@@ -530,7 +530,9 @@ nav a {
         word-spacing: 1px;
         letter-spacing: 3px;
     }
-
+    .heading{
+        color: rgba(117, 51, 51, 0.774);
+    }
     .middle-content {
         top: 28%;
         left: 16%;
