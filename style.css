@@ -29,6 +29,7 @@ main {
     top: 20px;
     border-radius: 8px;
     font-size: 16px;
+    color: white;
 }
 .main-container {
     width: 100%;
@@ -334,21 +335,7 @@ nav a {
 .social-icon-bottom {
     display: none;
 }
-.intro-content {
-    box-sizing: content-box;
-    font-size: 40px;
-    font-family: "gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    max-width: 1440px;
-    height: 1260px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    background-image: linear-gradient(to top, #163d49, rgb(46, 20, 63) 20%, #073b2e);
-}
-.intro {
-    color: rgba(126, 125, 125, 0.637);
-    width: 80%;
-}
+
 
 
 @media (max-width: 1024px) {
@@ -530,10 +517,7 @@ nav a {
         color: rgba(205, 216, 207, 0.863);
         text-decoration: none;
     }
-    .intro{
-        font-size: 28px;
-    }
-
+    
 }
 
 @media (max-width: 540px) {
